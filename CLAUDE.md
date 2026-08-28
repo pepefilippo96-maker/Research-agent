@@ -6,7 +6,8 @@ Aiutare l'utente (pepefilippo96@gmail.com) a trovare una nuova posizione lavorat
 nell'ambito **Data/AI**, in **Italia o all'estero**, producendo per ogni annuncio
 selezionato un **CV su misura in inglese**, senza mai inventare esperienze,
 competenze o risultati non presenti nella fonte di verità dell'utente.// e mostrando
-tutto in una **dashboard HTML locale**.
+tutto in una **dashboard web privata**, pubblicata su un link stabile (lo stesso
+ad ogni esecuzione) e visibile solo all'utente.
 
 ## Regole non negoziabili
 
@@ -34,6 +35,28 @@ tutto in una **dashboard HTML locale**.
    dell'azienda. Annunci sotto i requisiti economici non negoziabili vengono
    segnalati o scartati, non forzati a "CV pronto".
 
+## Privacy e distribuzione dei dati
+
+Il repository GitHub di questo progetto è **pubblico**. Tutti i file che
+contengono dati personali dell'utente restano quindi **solo in locale**,
+esclusi dal repository via `.gitignore` (mai committati né pushati):
+`data/profile/profile.yaml`, `data/profile/goals.yaml`,
+`data/profile/source/*`, `data/jobs/jobs.json`, `cv/generated/*`. Su GitHub
+resta solo la struttura/il codice del progetto, senza dati personali.
+
+Essendo questa un'esecuzione in un ambiente remoto effimero, i file "solo
+locali" **non sono persistenti tra una sessione e l'altra**: se il container
+viene rilasciato, vanno ricaricati/rigenerati. Se in futuro l'utente vorrà
+persistenza tra sessioni dovrà valutare di rendere il repository privato.
+
+**Distribuzione dei risultati**: poiché i dati non vivono in un percorso
+locale raggiungibile dall'utente, la dashboard (Fase 6) viene pubblicata come
+pagina web privata (link stabile, aggiornato ad ogni esecuzione — vedi
+`workflow.md`), e ogni CV generato (Fase 5) viene anche inviato direttamente
+in chat all'utente, oltre a essere mostrato per intero all'interno della
+dashboard stessa (non come link a un file locale, che non sarebbe
+raggiungibile dalla pagina pubblicata).
+
 ## Struttura del repository
 
 ```
@@ -51,14 +74,18 @@ cv/
     template.md          # template CV master in inglese
   generated/
     <job-slug>/
-      cv.md               # CV su misura in markdown
+      cv.md               # CV su misura in markdown (locale, non committato)
       cv.pdf              # CV esportato (se richiesto)
 web/
-  index.html               # dashboard locale (apribile via browser)
-  data.js / jobs.json      # dati letti dalla dashboard
+  index.html               # shell della dashboard (template, senza dati reali)
+  data.js                   # placeholder vuoto nel repo; i dati reali vivono
+                              # solo in data/jobs/jobs.json (locale) e vengono
+                              # incorporati nella pagina pubblicata come Artifact
 scripts/
   (eventuali script di supporto: export PDF, rigenerazione dashboard)
 CLAUDE.md
+workflow.md
+.gitignore                   # esclude tutti i file con dati personali (vedi sopra)
 ```
 
 ## Fasi operative
@@ -111,13 +138,16 @@ esplicita dell'utente.
 Per ogni job approvato dall'utente (che ha superato la Fase 4, o per cui
 l'utente conferma comunque di voler procedere), generazione di un CV in inglese
 a partire esclusivamente da `profile.yaml`, con enfasi sulle esperienze/skill
-pertinenti alla job description. Output in `cv/generated/<job-slug>/cv.md`
-(+ PDF se richiesto).
+pertinenti alla job description. Salvato in locale in
+`cv/generated/<job-slug>/cv.md` e **inviato anche direttamente in chat**
+all'utente non appena generato.
 
-**Fase 6 — Dashboard locale**
-Generazione/aggiornamento di `web/index.html`: pagina statica consultabile in
-locale (apertura diretta nel browser) che elenca i job selezionati con link
-all'annuncio originale, link al CV corrispondente, esito match tecnico ed
+**Fase 6 — Dashboard**
+Pubblicazione/aggiornamento della dashboard come **pagina web privata con link
+stabile** (stesso link ad ogni esecuzione, visibile solo all'utente — vedi
+`workflow.md` per quando viene fornito/aggiornato). Elenca i job selezionati
+con: link all'annuncio originale, CV su misura mostrato per intero all'interno
+della pagina stessa (non come link a un file locale), esito match tecnico ed
 economico/mission, filtrabile per stato.
 
 La dashboard è il punto in cui **l'utente**, e solo l'utente, confronta CV e

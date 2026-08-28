@@ -5,3 +5,6 @@ data/profile/profile.yaml
 data/profile/goals.yaml
 data/profile/source/*
 !data/profile/source/README.md
+data/jobs/jobs.json
+cv/generated/*
+!cv/generated/.gitkeep

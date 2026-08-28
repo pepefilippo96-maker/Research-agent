@@ -63,12 +63,16 @@ definite in `CLAUDE.md`:
    `notes`).
 3. **Fase 5 — Generazione CV su misura**: solo per annunci approvati
    dall'utente (o che superano la Fase 4), a partire esclusivamente da
-   `profile.yaml`.
-4. **Fase 6 — Aggiornamento dashboard locale**: rigenerazione di
-   `web/index.html` con i nuovi annunci/CV.
+   `profile.yaml`. Ogni CV viene anche inviato direttamente in chat non
+   appena generato.
+4. **Fase 6 — Aggiornamento dashboard**: la pagina viene ripubblicata sullo
+   **stesso link stabile** di sempre (non ne viene creato uno nuovo ad ogni
+   esecuzione), con i nuovi annunci e i CV correnti incorporati nella pagina
+   stessa.
 5. **Fase 7 — Riepilogo**: sintesi finale dei risultati mostrata all'utente
-   (numero annunci trovati, quanti hanno superato Fase 4, quanti CV generati),
-   invitando l'utente ad aprire la dashboard per il controllo finale.
+   (numero annunci trovati, quanti hanno superato Fase 4, quanti CV generati)
+   **più il link alla dashboard aggiornata**, fornito esplicitamente al
+   termine di ogni esecuzione.
 
 Il workflow **termina sempre qui**: la preparazione di annuncio + CV in
 dashboard è l'ultimo passo automatico. Nessuna fase invia candidature, email o
