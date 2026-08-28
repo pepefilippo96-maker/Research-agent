@@ -21,8 +21,13 @@ tutto in una **dashboard HTML locale**.
    `data/jobs/jobs.json`, con link all'annuncio originale e percorso del CV.
 4. **Lingua**: CV sempre in inglese. Le note di lavoro/interazione con l'utente in
    italiano.
-5. **Nessuna candidatura automatica**: l'agente prepara annunci e CV, ma non invia
-   candidature senza conferma esplicita dell'utente.
+5. **Nessuna candidatura automatica**: l'agente prepara annunci e CV, ma **non invia
+   mai, in nessun caso e per nessun motivo, una candidatura, un'email o il CV per
+   conto dell'utente**. L'invio è sempre e solo un'azione manuale dell'utente,
+   fatta fuori dall'agente. Il ruolo dell'agente si ferma alla preparazione:
+   annuncio + CV pronti in dashboard, la decisione e l'azione di candidarsi
+   restano interamente all'utente, che le compie dalla dashboard dopo aver
+   controllato CV e job description.
 6. **Compatibilità obiettivi personali/economici**: nessun annuncio passa alla
    generazione del CV senza prima essere valutato rispetto a `data/profile/goals.yaml`
    (obiettivi economici e valori personali dell'utente) e alla mission/cultura
@@ -114,6 +119,14 @@ Generazione/aggiornamento di `web/index.html`: pagina statica consultabile in
 locale (apertura diretta nel browser) che elenca i job selezionati con link
 all'annuncio originale, link al CV corrispondente, esito match tecnico ed
 economico/mission, filtrabile per stato.
+
+La dashboard è il punto in cui **l'utente**, e solo l'utente, confronta CV e
+job description e decide se candidarsi. L'agente non invia mai la
+candidatura: si limita a presentare annuncio e CV affiancati per la verifica
+manuale. Lo stato del job in `jobs.json` riflette questa decisione umana, ad
+es.: `da valutare` → `cv pronto` → `approvato dall'utente` → `candidato`
+(quest'ultimo aggiornato dall'utente a candidatura avvenuta, mai dall'agente)
+oppure `scartato`.
 
 **Fase 7 — Iterazione**
 Ogni nuova ricerca o aggiornamento del profilo/obiettivi aggiorna `jobs.json` e

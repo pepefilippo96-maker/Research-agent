@@ -67,7 +67,13 @@ definite in `CLAUDE.md`:
 4. **Fase 6 — Aggiornamento dashboard locale**: rigenerazione di
    `web/index.html` con i nuovi annunci/CV.
 5. **Fase 7 — Riepilogo**: sintesi finale dei risultati mostrata all'utente
-   (numero annunci trovati, quanti hanno superato Fase 4, quanti CV generati).
+   (numero annunci trovati, quanti hanno superato Fase 4, quanti CV generati),
+   invitando l'utente ad aprire la dashboard per il controllo finale.
+
+Il workflow **termina sempre qui**: la preparazione di annuncio + CV in
+dashboard è l'ultimo passo automatico. Nessuna fase invia candidature, email o
+il CV a nome dell'utente — la scelta di candidarsi, dopo aver confrontato CV e
+job description nella dashboard, è sempre e solo dell'utente.
 
 ## Note operative
 
@@ -75,5 +81,5 @@ definite in `CLAUDE.md`:
   presenti in `jobs.json`, aggiunge solo i nuovi o aggiorna quelli esplicitamente
   ricontrollati.
 - Le regole non negoziabili definite in `CLAUDE.md` (fonte di verità unica,
-  niente invenzioni, tracciabilità, nessuna candidatura automatica) restano
-  valide in ogni esecuzione di questo workflow.
+  niente invenzioni, tracciabilità, **nessuna candidatura automatica in nessun
+  caso**) restano valide in ogni esecuzione di questo workflow.
