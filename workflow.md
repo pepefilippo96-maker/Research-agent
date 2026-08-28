@@ -46,18 +46,35 @@ procede.
 
 ## Nota tecnica — accesso al testo degli annunci
 
-In questo ambiente l'accesso diretto a pagine web esterne (apertura autonoma
-di un link per leggerne il contenuto) è bloccato da una policy di rete a
-livello di ambiente, non aggirabile dall'agente. Di conseguenza la Fase 3 è
-strutturata in due passaggi (vedi Step 2):
+In questo ambiente l'accesso diretto a pagine web esterne tramite gli
+strumenti nativi (WebFetch) è bloccato da una policy di rete a livello di
+ambiente, non aggirabile dall'agente. Dal 29/08/2026 è però collegato il
+connettore **Tavily** (`tavily_search` con filtro data reale, `tavily_extract`
+per leggere il testo integrale di una pagina), che passa per l'infrastruttura
+connettori e non è soggetto a quel blocco. Di conseguenza la Fase 3 funziona
+così:
 
-1. l'agente usa la ricerca web solo per **proporre una shortlist di lead**
-   (azienda, ruolo plausibile, link), senza poter leggere il testo integrale
-   dell'annuncio;
-2. per ogni lead che l'utente vuole approfondire, **l'utente apre il link e
-   incolla in chat il testo della job description**. Solo su questo testo
-   reale l'agente calcola il match tecnico (Fase 3b), la verifica economica/
-   mission (Fase 4) e genera il CV (Fase 5).
+1. **Ricerca con filtro data** (`tavily_search`, `start_date`/`time_range`)
+   per proporre lead il più possibile recenti — non solo snippet, ma con
+   possibilità di aprirli.
+2. **Verifica obbligatoria prima di aggiungere un lead alla shortlist**:
+   l'agente usa `tavily_extract` per leggere il testo reale della pagina e
+   controllare segnali espliciti di chiusura ("this job has expired", "no
+   longer available", "position has been filled", 404, ecc. — anche in
+   italiano). Un lead con questi segnali viene marcato `scartato` con il
+   motivo verificato, mai aggiunto come "da valutare".
+3. Sul testo reale così ottenuto l'agente calcola direttamente il match
+   tecnico e la verifica economica/mission (Fase 3b/Fase 4 eseguite
+   dall'agente, non più solo dall'utente).
+4. **Fallback**: se Tavily non riesce a leggere una pagina (aggregatore che
+   blocca l'estrazione, sito non supportato) resta valido il metodo
+   precedente — l'utente apre il link e incolla il testo in chat.
+
+Esperienza diretta (29/08/2026): su 10 annunci trovati tramite semplice
+ricerca web (senza verifica) e poi controllati con `tavily_extract`, **8
+risultavano scaduti, chiusi o rimossi** — la verifica prima di aggiungere un
+lead alla shortlist non è opzionale, è la parte che rende la ricerca
+affidabile.
 
 Un lead per cui l'utente non fornisce il testo resta in dashboard con stato
 "da valutare" e un punteggio di match non calcolato (`null`), mai stimato o
@@ -86,12 +103,14 @@ Una volta confermato il piano, si eseguono in sequenza le fasi operative
 definite in `CLAUDE.md` (vedi la Nota tecnica sopra per il perché della
 Fase 3 in due passaggi):
 
-1. **Fase 3a — Shortlist**: ricerca web per proporre lead plausibili
-   (azienda, ruolo, link), salvati in `data/jobs/jobs.json` con
-   `technical_match_score: null` e stato `da valutare`.
-2. **Fase 3b — Conferma JD**: per ogni lead che l'utente vuole approfondire,
-   l'utente incolla in chat il testo dell'annuncio; l'agente aggiorna la
-   voce in `jobs.json` (titolo/requisiti reali) e calcola il match tecnico.
+1. **Fase 3a — Shortlist**: ricerca (Tavily, con filtro data) per proporre
+   lead plausibili e recenti (azienda, ruolo, link).
+2. **Fase 3b — Verifica e match**: prima di salvare un lead come `da
+   valutare` in `data/jobs/jobs.json`, l'agente ne legge il testo reale
+   (`tavily_extract`) per escludere annunci scaduti/chiusi/rimossi, e su
+   quel testo calcola direttamente il match tecnico. Solo se Tavily non
+   riesce a leggere la pagina si ricade sul metodo precedente: l'utente
+   apre il link e incolla in chat il testo dell'annuncio.
 3. **Fase 4 — Verifica compatibilità economica e mission**: solo per i lead
    con JD confermata in 3b, confronto con `goals.yaml`, esito salvato per
    annuncio (`economic_fit`, `mission_fit`, `notes`).

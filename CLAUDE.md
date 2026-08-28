@@ -128,11 +128,13 @@ settori/aziende da includere o escludere, eventuali requisiti non negoziabili
 Ricerca (on-demand, su richiesta dell'utente) di annunci compatibili su bacheche
 e siti aziendali (scelti di volta in volta in base a pertinenza), salvataggio in
 `jobs.json` di: titolo, azienda, link annuncio, data, requisiti chiave, punteggio
-di match tecnico. In questo ambiente l'apertura autonoma dei link è bloccata da
-policy di rete: la fase è quindi in due passaggi — 3a) shortlist di lead via
-ricerca web (senza testo integrale, match score `null`); 3b) per i lead di
-interesse l'utente incolla il testo dell'annuncio, su cui si calcola il match
-tecnico reale. Dettagli in `workflow.md`.
+di match tecnico. WebFetch nativo è bloccato in questo ambiente, ma il
+connettore **Tavily** (collegato dall'utente) permette ricerca con filtro data
+e lettura del testo integrale delle pagine: ogni lead viene verificato (non
+scaduto/chiuso) prima di entrare in `jobs.json`, ed è su quel testo reale che
+si calcola subito il match tecnico. Solo se Tavily non riesce a leggere una
+pagina si ricade sul metodo precedente (l'utente incolla il testo). Dettagli
+in `workflow.md`.
 
 **Fase 4 — Verifica compatibilità economica e mission**
 Per ogni annuncio individuato in Fase 3, verifica rispetto a `goals.yaml`:
