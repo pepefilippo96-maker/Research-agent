@@ -3,7 +3,9 @@
 ## Obiettivo
 
 Aiutare l'utente (pepefilippo96@gmail.com) a trovare una nuova posizione lavorativa
-nell'ambito **Data/AI**, in **Italia o all'estero**, producendo per ogni annuncio
+nell'ambito **Data/AI**, con sede di lavoro preferibilmente **nel milanese e
+dintorni** (dettaglio completo dei criteri in `data/profile/search_criteria.yaml`,
+locale), producendo per ogni annuncio
 selezionato un **CV su misura in inglese**, senza mai inventare esperienze,
 competenze o risultati non presenti nella fonte di verità dell'utente.// e mostrando
 tutto in una **dashboard web privata**, pubblicata su un link stabile (lo stesso
@@ -120,9 +122,13 @@ settori/aziende da includere o escludere, eventuali requisiti non negoziabili
 
 **Fase 3 — Ricerca annunci**
 Ricerca (on-demand, su richiesta dell'utente) di annunci compatibili su bacheche
-e siti aziendali (scelti di volta in volta in base a pertinenza), valutazione
-di compatibilità tecnica col profilo, salvataggio in `jobs.json` di: titolo,
-azienda, link annuncio, data, requisiti chiave, punteggio di match tecnico.
+e siti aziendali (scelti di volta in volta in base a pertinenza), salvataggio in
+`jobs.json` di: titolo, azienda, link annuncio, data, requisiti chiave, punteggio
+di match tecnico. In questo ambiente l'apertura autonoma dei link è bloccata da
+policy di rete: la fase è quindi in due passaggi — 3a) shortlist di lead via
+ricerca web (senza testo integrale, match score `null`); 3b) per i lead di
+interesse l'utente incolla il testo dell'annuncio, su cui si calcola il match
+tecnico reale. Dettagli in `workflow.md`.
 
 **Fase 4 — Verifica compatibilità economica e mission**
 Per ogni annuncio individuato in Fase 3, verifica rispetto a `goals.yaml`:
