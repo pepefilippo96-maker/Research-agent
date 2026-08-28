@@ -137,7 +137,7 @@ in futuro su richiesta esplicita dell'utente.
 
 - [x] Fase 0 — Setup e CLAUDE.md
 - [x] Struttura repository applicata (cartelle/file placeholder, dati vuoti)
-- [ ] Fase 1 — Attesa CV/profilo e obiettivi economici/personali dall'utente
+- [x] Fase 1 — Profilo e obiettivi economici/personali caricati e strutturati
 - [ ] Fase 2 — Criteri di ricerca
 - [ ] Fase 3 — Prima ricerca annunci
 - [ ] Fase 4 — Prima verifica compatibilità economica/mission

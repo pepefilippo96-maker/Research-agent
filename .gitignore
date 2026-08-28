@@ -1,0 +1,7 @@
+# Dati personali dell'utente: il repository GitHub e' pubblico, quindi questi
+# file restano SOLO in locale e non vengono mai committati (vedi CLAUDE.md,
+# regola 1, e la scelta esplicita dell'utente sulla privacy del repo).
+data/profile/profile.yaml
+data/profile/goals.yaml
+data/profile/source/*
+!data/profile/source/README.md
