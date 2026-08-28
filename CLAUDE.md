@@ -58,6 +58,10 @@ CLAUDE.md
 
 ## Fasi operative
 
+> Per **quando e come** si attiva concretamente il processo di ricerca (Fasi 3-7),
+> incluse le domande preliminari obbligatorie e la presentazione del piano prima
+> di eseguire, vedi `workflow.md`.
+
 **Fase 0 — Setup (fatto)**
 Creazione struttura repo e di questo file.
 
