@@ -156,7 +156,14 @@ stabile** (stesso link ad ogni esecuzione, visibile solo all'utente — vedi
 `workflow.md` per quando viene fornito/aggiornato). Elenca i job selezionati
 con: link all'annuncio originale, CV su misura mostrato per intero all'interno
 della pagina stessa (non come link a un file locale), esito match tecnico ed
-economico/mission, filtrabile per stato.
+economico/mission, filtrabile per stato. Dalla dashboard l'utente può anche
+**scartare o ripristinare un annuncio con un click**: la pagina salva la
+modifica pubblicando da sola una nuova versione di sé stessa (capacità
+`artifact` degli Artifact), senza bisogno di un'esecuzione dell'agente. Di
+conseguenza la dashboard può diventare più aggiornata di `jobs.json`: prima
+di ogni nuova ricerca l'agente rilegge lo stato pubblicato e lo riporta in
+`jobs.json` (vedi `workflow.md`, Step 0), così uno scarto fatto dall'utente
+non viene mai perso o ripristinato per errore da una ricerca successiva.
 
 La dashboard è il punto in cui **l'utente**, e solo l'utente, confronta CV e
 job description e decide se candidarsi. L'agente non invia mai la

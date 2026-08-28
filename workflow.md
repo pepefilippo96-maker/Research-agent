@@ -14,7 +14,16 @@ o della dashboard, da solo, non deve far scattare una nuova ricerca.
 
 ## Step 0 — Domande preliminari (obbligatorie ad ogni esecuzione)
 
-Prima di iniziare qualunque ricerca, porre sempre alcune domande di verifica —
+**Prima di tutto, sincronizzazione dashboard → jobs.json.** Dalla dashboard
+l'utente può scartare o ripristinare un annuncio con un click in qualsiasi
+momento, anche fuori da un'esecuzione dell'agente (la pagina pubblica da sola
+la modifica — vedi Fase 6 in `CLAUDE.md`). Prima di procedere, rileggere la
+dashboard pubblicata (stesso link stabile) e riportare eventuali cambi di
+stato (`scartato` / ripristinato a `da valutare`) in `data/jobs/jobs.json`,
+così una ricerca successiva non ripropone né sovrascrive per errore una
+decisione già presa dall'utente sulla pagina.
+
+Poi, prima di iniziare qualunque ricerca, porre sempre alcune domande di verifica —
 anche se già risposte in sessioni precedenti — per intercettare eventuali
 cambiamenti negli obiettivi:
 
