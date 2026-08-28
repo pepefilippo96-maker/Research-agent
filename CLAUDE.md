@@ -171,7 +171,9 @@ in futuro su richiesta esplicita dell'utente.
 - [x] Struttura repository applicata (cartelle/file placeholder, dati vuoti)
 - [x] Fase 1 — Profilo e obiettivi economici/personali caricati e strutturati
 - [x] Fase 2 — Criteri di ricerca
-- [ ] Fase 3 — Prima ricerca annunci
-- [ ] Fase 4 — Prima verifica compatibilità economica/mission
+- [x] Fase 3 — Prima ricerca annunci (shortlist trovata via web search; WebFetch bloccato in
+      questo ambiente, quindi gli annunci sono marcati "da valutare"/non verificati finché
+      l'utente non fornisce il testo delle JD — vedi jobs.json)
+- [ ] Fase 4 — Prima verifica compatibilità economica/mission (in attesa dei testi JD)
 - [ ] Fase 5 — Primi CV generati
-- [ ] Fase 6 — Prima versione dashboard
+- [x] Fase 6 — Prima versione dashboard pubblicata (link stabile)
