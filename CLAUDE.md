@@ -41,7 +41,8 @@ Il repository GitHub di questo progetto è **pubblico**. Tutti i file che
 contengono dati personali dell'utente restano quindi **solo in locale**,
 esclusi dal repository via `.gitignore` (mai committati né pushati):
 `data/profile/profile.yaml`, `data/profile/goals.yaml`,
-`data/profile/source/*`, `data/jobs/jobs.json`, `cv/generated/*`. Su GitHub
+`data/profile/search_criteria.yaml`, `data/profile/source/*`,
+`data/jobs/jobs.json`, `cv/generated/*`. Su GitHub
 resta solo la struttura/il codice del progetto, senza dati personali.
 
 Essendo questa un'esecuzione in un ambiente remoto effimero, i file "solo
@@ -66,6 +67,7 @@ data/
     profile.yaml        # profilo strutturato: esperienze, skill, formazione, risultati
     goals.yaml           # obiettivi economici (RAL minima/target, benefit) e personali
                           # (valori, cultura aziendale, temi da evitare)
+    search_criteria.yaml  # criteri di ricerca: ruoli, seniority, aziende, location, RAL min
   jobs/
     jobs.json            # elenco annunci selezionati + metadati + stato + link CV
                           # incl. punteggio match tecnico + esito verifica economica/mission
@@ -114,7 +116,7 @@ Nella stessa fase si raccolgono anche in `data/profile/goals.yaml`:
 Definizione con l'utente di: ruoli target, seniority, località/remote,
 settori/aziende da includere o escludere, eventuali requisiti non negoziabili
 (es. visto, contratto), oltre ai vincoli economici/valoriali già raccolti in
-`goals.yaml`.
+`goals.yaml`. Salvati in `data/profile/search_criteria.yaml`.
 
 **Fase 3 — Ricerca annunci**
 Ricerca (on-demand, su richiesta dell'utente) di annunci compatibili su bacheche
@@ -168,7 +170,7 @@ in futuro su richiesta esplicita dell'utente.
 - [x] Fase 0 — Setup e CLAUDE.md
 - [x] Struttura repository applicata (cartelle/file placeholder, dati vuoti)
 - [x] Fase 1 — Profilo e obiettivi economici/personali caricati e strutturati
-- [ ] Fase 2 — Criteri di ricerca
+- [x] Fase 2 — Criteri di ricerca
 - [ ] Fase 3 — Prima ricerca annunci
 - [ ] Fase 4 — Prima verifica compatibilità economica/mission
 - [ ] Fase 5 — Primi CV generati

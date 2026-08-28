@@ -3,6 +3,7 @@
 # regola 1, e la scelta esplicita dell'utente sulla privacy del repo).
 data/profile/profile.yaml
 data/profile/goals.yaml
+data/profile/search_criteria.yaml
 data/profile/source/*
 !data/profile/source/README.md
 data/jobs/jobs.json
