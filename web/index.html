@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<title>Job Search Dashboard</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg: #f7f7f8;
+    --card-bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #6b7280;
+    --border: #e5e7eb;
+    --accent: #2563eb;
+    --ok: #16a34a;
+    --warn: #d97706;
+    --bad: #dc2626;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #111318;
+      --card-bg: #1a1d24;
+      --text: #e5e7eb;
+      --muted: #9ca3af;
+      --border: #2a2e37;
+      --accent: #60a5fa;
+      --ok: #4ade80;
+      --warn: #fbbf24;
+      --bad: #f87171;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+  }
+  header {
+    padding: 24px 32px 8px;
+  }
+  h1 { margin: 0 0 4px; font-size: 22px; }
+  header p { margin: 0; color: var(--muted); font-size: 14px; }
+  .controls {
+    display: flex; gap: 8px; flex-wrap: wrap;
+    padding: 16px 32px;
+  }
+  .controls button {
+    border: 1px solid var(--border);
+    background: var(--card-bg);
+    color: var(--text);
+    padding: 6px 12px;
+    border-radius: 999px;
+    font-size: 13px;
+    cursor: pointer;
+  }
+  .controls button.active {
+    background: var(--accent);
+    color: white;
+    border-color: var(--accent);
+  }
+  main { padding: 0 32px 40px; }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 16px;
+  }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 16px;
+  }
+  .card h3 { margin: 0 0 2px; font-size: 16px; }
+  .card .company { color: var(--muted); font-size: 14px; margin-bottom: 8px; }
+  .badges { display: flex; gap: 6px; flex-wrap: wrap; margin: 10px 0; }
+  .badge {
+    font-size: 11px;
+    padding: 2px 8px;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    color: var(--muted);
+  }
+  .badge.status { color: white; background: var(--accent); border-color: var(--accent); }
+  .badge.fit-ok { color: var(--ok); border-color: var(--ok); }
+  .badge.fit-warn { color: var(--warn); border-color: var(--warn); }
+  .badge.fit-bad { color: var(--bad); border-color: var(--bad); }
+  .links { display: flex; gap: 12px; margin-top: 12px; font-size: 13px; }
+  .links a { color: var(--accent); text-decoration: none; }
+  .links a:hover { text-decoration: underline; }
+  .links .disabled { color: var(--muted); }
+  .empty {
+    padding: 60px 20px;
+    text-align: center;
+    color: var(--muted);
+  }
+  .empty code {
+    background: var(--card-bg);
+    border: 1px solid var(--border);
+    padding: 2px 6px;
+    border-radius: 4px;
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Job Search Dashboard</h1>
+  <p>Annunci selezionati, esito match ed economico/mission, e CV su misura. La candidatura è sempre e solo una tua azione manuale.</p>
+</header>
+
+<div class="controls" id="filters"></div>
+
+<main>
+  <div class="grid" id="grid"></div>
+  <div class="empty" id="empty" hidden>
+    Nessun annuncio ancora presente.<br>
+    Verrà popolato eseguendo il workflow di ricerca (vedi <code>workflow.md</code>), che aggiorna <code>data/jobs/jobs.json</code> e questo file.
+  </div>
+</main>
+
+<script src="data.js"></script>
+<script>
+  const STATUSES = ["da valutare", "scartato", "cv pronto", "approvato dall'utente", "candidato"];
+  let activeFilter = "tutti";
+
+  function fitBadge(label, value) {
+    if (value == null) return `<span class="badge">${label}: n/d</span>`;
+    const cls = value === "ok" ? "fit-ok" : value === "unknown" ? "fit-warn" : "fit-bad";
+    return `<span class="badge ${cls}">${label}: ${value}</span>`;
+  }
+
+  function renderCard(job) {
+    const cvLink = job.cv_path
+      ? `<a href="../${job.cv_path}" target="_blank">CV su misura</a>`
+      : `<span class="disabled">CV non ancora generato</span>`;
+    const jdLink = job.url
+      ? `<a href="${job.url}" target="_blank">Job description</a>`
+      : `<span class="disabled">Link non disponibile</span>`;
+
+    return `
+      <div class="card" data-status="${job.status || ''}">
+        <h3>${job.title || "(senza titolo)"}</h3>
+        <div class="company">${job.company || ""}${job.location ? " · " + job.location : ""}</div>
+        <div class="badges">
+          <span class="badge status">${job.status || "da valutare"}</span>
+          ${job.technical_match_score != null ? `<span class="badge">match tecnico: ${job.technical_match_score}</span>` : ""}
+          ${fitBadge("economico", job.economic_fit)}
+          ${fitBadge("mission", job.mission_fit)}
+        </div>
+        ${job.fit_notes ? `<div style="font-size:13px;color:var(--muted)">${job.fit_notes}</div>` : ""}
+        <div class="links">
+          ${jdLink}
+          ${cvLink}
+        </div>
+      </div>
+    `;
+  }
+
+  function render() {
+    const grid = document.getElementById("grid");
+    const empty = document.getElementById("empty");
+    const jobs = (typeof JOBS !== "undefined" ? JOBS : [])
+      .filter(j => activeFilter === "tutti" || j.status === activeFilter);
+
+    if (!jobs.length) {
+      grid.innerHTML = "";
+      empty.hidden = false;
+    } else {
+      empty.hidden = true;
+      grid.innerHTML = jobs.map(renderCard).join("");
+    }
+  }
+
+  function renderFilters() {
+    const el = document.getElementById("filters");
+    const all = ["tutti", ...STATUSES];
+    el.innerHTML = all.map(s =>
+      `<button data-status="${s}" class="${s === activeFilter ? 'active' : ''}">${s}</button>`
+    ).join("");
+    el.querySelectorAll("button").forEach(btn => {
+      btn.addEventListener("click", () => {
+        activeFilter = btn.dataset.status;
+        renderFilters();
+        render();
+      });
+    });
+  }
+
+  renderFilters();
+  render();
+</script>
+</body>
+</html>

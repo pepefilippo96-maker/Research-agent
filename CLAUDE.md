@@ -136,6 +136,7 @@ in futuro su richiesta esplicita dell'utente.
 ## Stato attuale del progetto
 
 - [x] Fase 0 — Setup e CLAUDE.md
+- [x] Struttura repository applicata (cartelle/file placeholder, dati vuoti)
 - [ ] Fase 1 — Attesa CV/profilo e obiettivi economici/personali dall'utente
 - [ ] Fase 2 — Criteri di ricerca
 - [ ] Fase 3 — Prima ricerca annunci
