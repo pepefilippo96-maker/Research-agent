@@ -81,10 +81,14 @@ cv/
       cv.md               # CV su misura in markdown (locale, non committato)
       cv.pdf              # CV esportato (se richiesto)
 web/
-  index.html               # shell della dashboard (template, senza dati reali)
-  data.js                   # placeholder vuoto nel repo; i dati reali vivono
-                              # solo in data/jobs/jobs.json (locale) e vengono
-                              # incorporati nella pagina pubblicata come Artifact
+  index.html               # template della dashboard, dati embedded come JSON
+                              # inline (array vuoto nel repo); i dati reali
+                              # vivono solo in data/jobs/jobs.json (locale) e
+                              # vengono incorporati nella pagina pubblicata come
+                              # Artifact. La pagina ha una capacità `artifact`
+                              # che le permette di ripubblicare da sola una
+                              # nuova versione di sé stessa quando l'utente
+                              # scarta/ripristina un annuncio dalla dashboard.
 scripts/
   (eventuali script di supporto: export PDF, rigenerazione dashboard)
 CLAUDE.md
