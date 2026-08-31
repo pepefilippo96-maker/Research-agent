@@ -39,3 +39,7 @@ contenuto del profilo in base alla job description, mai aggiungerne di nuovo.
 ## Languages
 
 {{skills.languages_spoken}}
+
+## Data Protection
+
+I authorize the processing of my personal data contained in this CV pursuant to the EU General Data Protection Regulation (GDPR) 2016/679 and, where applicable, Italian Legislative Decree 196/2003.

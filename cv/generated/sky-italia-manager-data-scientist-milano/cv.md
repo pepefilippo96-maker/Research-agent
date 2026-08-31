@@ -62,3 +62,7 @@ Novara · 2010 – 2015
 ## Languages
 
 Italian (native) · English (fluent) · Spanish (basic)
+
+## Data Protection
+
+I authorize the processing of my personal data contained in this CV pursuant to the EU General Data Protection Regulation (GDPR) 2016/679 and, where applicable, Italian Legislative Decree 196/2003.
