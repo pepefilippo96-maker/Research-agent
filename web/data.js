@@ -376,10 +376,10 @@ const JOBS = [
     "technical_match_score": "Fit buono su strumenti e ambito (SQL, Python, Power BI, KPI framework, forecasting, stakeholder management tutti presenti nel profilo), ma il livello di esperienza richiesto (8+ anni) supera l'esperienza reale del profilo (circa 5 anni). Ruolo 'Principal' molto senior come individual contributor globale.",
     "economic_fit": "unknown",
     "mission_fit": "ok",
-    "fit_notes": "VERIFICATO ATTIVO (testo integrale letto via Tavily). Avolta è una grande multinazionale travel retail/F&B (ex Dufry, fusa con Autogrill, 5.500 punti vendita in 75+ paesi) — contesto dinamico e in trasformazione, coerente con 'azienda dinamica, sfide nuove' di goals.yaml. Sede Milano disponibile (alternativa Madrid). Nessuna RAL dichiarata: da chiedere in colloquio. Gap di esperienza (8+ anni richiesti vs ~5 anni reali) è il principale rischio tecnico: non genero CV in questa sessione, da valutare con l'utente se procedere comunque puntando su qualità/trasferibilità delle competenze.",
-    "status": "da valutare",
+    "fit_notes": "VERIFICATO ATTIVO (testo integrale letto via Tavily). Avolta è una grande multinazionale travel retail/F&B (ex Dufry, fusa con Autogrill, 5.500 punti vendita in 75+ paesi) — contesto dinamico e in trasformazione, coerente con 'azienda dinamica, sfide nuove' di goals.yaml. Sede Milano disponibile (alternativa Madrid). Nessuna RAL dichiarata: da chiedere in colloquio. Gap di esperienza (8+ anni richiesti vs ~5 anni reali) resta il principale rischio tecnico — CV generato comunque su richiesta esplicita dell'utente, enfatizzando SQL/Python/Power BI, KPI framework, forecasting e stakeholder management realmente presenti nel profilo, senza aggiungere anni di esperienza o competenze non documentate in profile.yaml. Caveat di seniority ('Principal', 8+ anni) segnalato per la decisione finale dell'utente; RAL da verificare in colloquio.",
+    "status": "cv pronto",
     "discard_reason": null,
-    "cv_path": null
+    "cv_path": "cv/generated/avolta-global-principal-data-analyst-milano/cv.md"
   },
   {
     "slug": "metro-italia-customer-analytics-leader-san-donato",
