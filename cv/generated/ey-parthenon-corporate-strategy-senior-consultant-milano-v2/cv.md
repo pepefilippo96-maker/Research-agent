@@ -41,12 +41,21 @@ Pero · 2021-09 – 2022-04
 - Performed data mining and exploratory analysis to identify key insights
 - Contributed to development of machine learning models (NLP, neural networks, scraping models)
 
-## Additional Experience
+## Social & Cultural Commitment
 
 ### Students' Tutor — Camplus
 Milan · 2018 – 2020
 
 - Tutoring university students for the preparation of microeconomics and business economics exams
+
+### Study Assistance to Middle School Pupils — Cooperativa Martinengo
+Milan · 2018 – 2021-07
+
+### Study Assistance to High School Students — Portofranco
+Milan · 2015
+
+### Background Actor, La Bohème and Turandot — Coro Langhi, Compagnia Teatro Coccia
+Novara · 2009 – 2010
 
 ## Skills
 

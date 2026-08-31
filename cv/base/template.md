@@ -36,6 +36,15 @@ contenuto del profilo in base alla job description, mai aggiungerne di nuovo.
 
 - {{certification}}
 
+## Social & Cultural Commitment
+
+<!-- da profile.yaml → volunteering_and_extracurricular; sezione presente nel CV
+     originale dell'utente (cv_pf_1.pdf), da NON escludere nei CV generati -->
+### {{role}} — {{organization}}
+{{location}} · {{start_date}} – {{end_date}}
+
+- {{description}}
+
 ## Languages
 
 {{skills.languages_spoken}}

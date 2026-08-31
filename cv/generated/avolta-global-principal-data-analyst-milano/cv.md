@@ -59,6 +59,22 @@ Milan · 2015 – 2018
 ### High School Diploma — Liceo Classico Statale Carlo Alberto
 Novara · 2010 – 2015
 
+## Social & Cultural Commitment
+
+### Students' Tutor — Camplus
+Milan · 2018 – 2020
+
+- Tutoring university students for the preparation of microeconomics and business economics exams
+
+### Study Assistance to Middle School Pupils — Cooperativa Martinengo
+Milan · 2018 – 2021-07
+
+### Study Assistance to High School Students — Portofranco
+Milan · 2015
+
+### Background Actor, La Bohème and Turandot — Coro Langhi, Compagnia Teatro Coccia
+Novara · 2009 – 2010
+
 ## Languages
 
 Italian (native) · English (fluent) · Spanish (basic)
