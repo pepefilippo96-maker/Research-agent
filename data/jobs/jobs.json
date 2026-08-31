@@ -491,5 +491,74 @@
     "status": "da valutare",
     "discard_reason": null,
     "cv_path": null
+  },
+  {
+    "slug": "subito-senior-data-analyst-milano",
+    "title": "Senior Data Analyst",
+    "company": "Subito",
+    "location": "Milano (via Angelo Scarsellini, Affori)",
+    "remote": "ibrido, 2 giorni/settimana in ufficio e 3 da remoto (full-remote valutabile per casi specifici in fase di colloquio)",
+    "url": "https://it.linkedin.com/jobs/view/senior-data-analyst-at-subito-4452235823",
+    "source": "LinkedIn (pagina ufficiale aziendale Subito) — verificato leggendo il testo integrale il 31/08/2026",
+    "date_found": "2026-08-31",
+    "date_posted": null,
+    "key_requirements": [
+      "5+ anni di esperienza come Data Analyst in contesti complessi",
+      "Estrazione/manipolazione dati su larga scala: SQL, Spark, Pandas/Polars; ottima conoscenza di Python o R",
+      "Statistica applicata (regressioni, ANOVA, serie storiche, statistica bayesiana) e data storytelling per stakeholder"
+    ],
+    "technical_match_score": "Fit molto buono: generazione di insight per il business, dashboard automatizzate e data storytelling per stakeholder sono il core dell'esperienza da Marketing Data Analyst (Mediaset/Publitalia) e Analytics Consultant (Jakala, incl. PySpark/SQL). La statistica avanzata (bayesiana, serie storiche) è meno documentata nel dettaglio nel profilo ma coerente con 'Statistical Modeling' e 'Forecasting Models' già presenti. Seniority richiesta (5+ anni) sostanzialmente in linea con l'esperienza professionale maturata (~5 anni da settembre 2021).",
+    "economic_fit": "below_target",
+    "mission_fit": "ok",
+    "fit_notes": "VERIFICATO ATTIVO (testo integrale letto via Tavily il 31/08/2026, annuncio pubblicato dalla stessa Subito su LinkedIn). RAL dichiarata 40.000–55.000 € + bonus annuali: il minimo è sotto la soglia non negoziabile di 45k in goals.yaml, ma il massimo supera sia la soglia minima sia il target di 50k — fascia non garantita, da negoziare. Subito è il marketplace leader in Italia (app diffusissima, valutazione utenti 4.8/5): non è un 'grande gruppo' tradizionale come Mediaset, ma è un'azienda digitale di grande scala e visibilità, non una piccola/media impresa o startup (rispetta l'esclusione in search_criteria.yaml). Cultura dichiaratamente data-driven, con framework OKR e forte enfasi tecnica — molto coerente con 'azienda dinamica' e 'cultura del cambiamento' di goals.yaml. Non genero CV in questa sessione: da valutare con l'utente vista l'incertezza sulla fascia economica.",
+    "status": "da valutare",
+    "discard_reason": null,
+    "cv_path": null
+  },
+  {
+    "slug": "amplifon-global-customer-intelligence-crm-insights-milano",
+    "title": "Global Customer Intelligence & CRM Insights Manager (annuncio dettagliato riporta 'Sr Specialist')",
+    "company": "Amplifon",
+    "location": "Milano (Sede centrale)",
+    "remote": "ibrido, fino a 6 giorni/mese da remoto",
+    "url": "https://builtin.com/job/global-customer-intelligence-crm-insights-senior-specialist/9000923",
+    "source": "Built In (mirror dettagliato dell'annuncio Amplifon, testo integrale letto il 31/08/2026); posizione confermata anche nell'elenco ufficiale su careers.amplifon.com con titolo 'Global Customer Intelligence & CRM Insights Manager' (Milano), ma la relativa pagina di dettaglio è un'app dinamica non estraibile automaticamente in questo ambiente — verificare titolo/livello esatto sulla pagina ufficiale prima di procedere",
+    "date_found": "2026-08-31",
+    "date_posted": null,
+    "key_requirements": [
+      "2-5 anni di esperienza in ruolo analitico, preferibilmente in ambito marketing",
+      "SQL, Python o R; Power BI/Tableau un plus",
+      "Segmentazione clienti, modelli predittivi di comportamento cliente, analisi campagne CRM"
+    ],
+    "technical_match_score": "Fit molto buono su strumenti e ambito: raccolta/pulizia dati, analisi comportamento cliente, segmentazione, dashboard e insight per il marketing sono molto vicini all'esperienza Marketing Data Analyst (Mediaset/Publitalia, audience analytics) e Analytics Consultant (Jakala, customer acquisition/retention). Nota: i requisiti di esperienza dell'annuncio dettagliato (2-5 anni) sono sotto la seniority target di 5+ anni, mentre il titolo sull'elenco ufficiale Amplifon è 'Manager' — possibile disallineamento tra titolo e livello richiesto, da chiarire prima di un eventuale colloquio.",
+    "economic_fit": "unknown",
+    "mission_fit": "ok",
+    "fit_notes": "VERIFICATO (testo integrale dell'annuncio dettagliato letto via Tavily il 31/08/2026, con nome del manager di riferimento, CCNL Commercio e struttura benefit tipica di un annuncio reale). RAL dichiarata 44.000–62.000 € lordi + bonus di risultato: il minimo è di poco sotto la soglia non negoziabile di 45k in goals.yaml, il massimo è ben oltre il target di 50k — nessuna garanzia sulla fascia effettiva. Amplifon è una multinazionale italiana, leader globale nel settore hearing care (20.300+ dipendenti, 24+ paesi), ottimo fit su dimensione/brand; cultura dichiarata 'drive di una start-up' nonostante le dimensioni, coerente con 'sfide nuove' e crescita reale di goals.yaml. Non genero CV in questa sessione: da valutare con l'utente vista l'incertezza economica e il possibile disallineamento di seniority tra annuncio e titolo ufficiale.",
+    "status": "da valutare",
+    "discard_reason": null,
+    "cv_path": null
+  },
+  {
+    "slug": "jnj-senior-data-scientist-ai-scientific-applications-milano",
+    "title": "Senior Data Scientist - AI & Scientific Applications",
+    "company": "Johnson & Johnson (Innovative Medicine)",
+    "location": "Milano (alternativa: Madrid)",
+    "remote": null,
+    "url": "https://it.talent.com/view?id=633684128854121926",
+    "source": "Talent.com (mirror di annuncio Johnson & Johnson, testo integrale letto il 31/08/2026) — ATTENZIONE: la pagina mostra il messaggio \"L'offerta di lavoro non è disponibile nel tuo Paese\" pur visualizzando il testo completo; verificare la posizione direttamente su careers.jnj.com prima di procedere",
+    "date_found": "2026-08-31",
+    "date_posted": null,
+    "key_requirements": [
+      "Master o PhD in Data Science, Computer Science, Statistica, Ingegneria o affini",
+      "5+ anni di esperienza nella costruzione di soluzioni di data science/ML/AI/analytics",
+      "Esperienza hands-on con Large Language Models, Generative AI, prompt design, Retrieval-Augmented Generation, API, database, piattaforme cloud"
+    ],
+    "technical_match_score": "Fit tecnico parziale: ruolo fortemente orientato a data science/AI engineering hands-on in produzione (LLM, RAG, sviluppo software, MLOps) — il profilo copre Python, SQL, Machine Learning e analytics ma non a livello di ingegnerizzazione/produzione di applicazioni AI generativa. Seniority (5+ anni) in linea con l'esperienza professionale maturata. Settore (scienze della vita/healthcare) distante da media/retail/automotive del profilo, ma il gap è principalmente tecnico (AI engineering vs BI/analytics) più che di dominio.",
+    "economic_fit": "ok",
+    "mission_fit": "unknown",
+    "fit_notes": "RAL per l'Italia dichiarata 48.600–77.395 €: ben sopra sia la soglia minima di 45k sia il target di 50k in goals.yaml. Johnson & Johnson è una multinazionale globale di grandi dimensioni nel settore healthcare/farmaceutico — ottimo fit su dimensione/brand, ma mission/settore (scienze della vita) non ancora confrontato con i valori/cultura in goals.yaml oltre al fit dimensionale. Gap tecnico reale (AI engineering hands-on vs BI/analytics/forecasting del profilo), analogo al caso Sky Italia Manager Data Scientist già in pipeline. Fonte da riverificare su careers.jnj.com per confermare disponibilità effettiva della posizione in Italia. Non genero CV in questa sessione: da valutare con l'utente vista l'incertezza tecnica e la necessità di riverificare la fonte.",
+    "status": "da valutare",
+    "discard_reason": null,
+    "cv_path": null
   }
 ]
