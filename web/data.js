@@ -632,5 +632,28 @@ const JOBS = [
     "status": "da valutare",
     "discard_reason": null,
     "cv_path": null
+  },
+  {
+    "slug": "engie-italia-forecasting-data-scientist-milano",
+    "title": "Data Scientist Forecasting",
+    "company": "ENGIE Italia S.p.A.",
+    "location": "Milano",
+    "remote": null,
+    "url": "https://jobs.engie.com/job/Data-Scientist-Forecasting/65707-en_US/",
+    "source": "Career page ufficiale ENGIE (link fornito dall'utente) — verificato ATTIVO leggendo il testo integrale il 31/08/2026 (Posting Start Date: 8/4/26, pulsante Apply funzionante)",
+    "date_found": "2026-08-31",
+    "date_posted": "2026-08-04",
+    "key_requirements": [
+      "2+ anni di esperienza in forecasting, data science o analisi quantitativa, preferibilmente nel settore energy",
+      "Python e R, time series forecasting, piattaforme dati moderne (Databricks, Spark), ambienti cloud analytics",
+      "Master o PhD in matematica applicata, ingegneria, data science, fisica o economia"
+    ],
+    "technical_match_score": "Fit tecnico molto buono: il ruolo è specificamente focalizzato sul forecasting (modelli, processi, miglioramento continuo) e sulla traduzione di dati complessi in insight azionabili per stakeholder di business — corrisponde quasi puntualmente a 'Designed forecasting models to support business planning...' e 'Built market and revenue estimation models...' già in profile.yaml (Mediaset/Publitalia). Python presente nel profilo, R non documentato (solo Python/SQL/PySpark). Requisito di esperienza (2+ anni) sotto il target di 5+ anni indicato in search_criteria.yaml, ma il range salariale 'a seconda di esperienza e seniority' suggerisce un ruolo scalabile anche per profili più senior.",
+    "economic_fit": "below_target",
+    "mission_fit": "ok",
+    "fit_notes": "VERIFICATO ATTIVO (testo integrale letto direttamente dalla career page ufficiale ENGIE, candidatura aperta). RAL dichiarata € 39.000–53.500 lordi/anno 'a seconda di esperienza e livello di seniority': il minimo è sotto la soglia non negoziabile di 45k in goals.yaml, il massimo supera sia la soglia minima sia il target di 50k — fascia scalabile ma non garantita. ENGIE è una multinazionale energetica globale di grandi dimensioni (30+ paesi) con missione esplicita di transizione energetica/decarbonizzazione e certificazioni su diversità e inclusione (ISO 30415, UNI PDR 125) — ottimo fit su dimensione/brand e forte coerenza con il valore 'innovazione responsabile, attenzione all'impatto su società' di goals.yaml. Non genero CV in questa sessione: da valutare con l'utente vista l'incertezza sulla fascia economica, nonostante l'ottimo fit tecnico e di mission.",
+    "status": "da valutare",
+    "discard_reason": null,
+    "cv_path": null
   }
 ];
