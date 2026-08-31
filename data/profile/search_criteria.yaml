@@ -51,3 +51,11 @@ exclusions:
   - consulenza generica di basso livello
 
 non_negotiable_requirements: []   # es. visto, tipo di contratto — nessuno indicato finora
+
+recency:
+  max_age_days: 60   # richiesto dall'utente il 31/08/2026: considerare solo annunci pubblicati/aperti negli ultimi 2 mesi
+  rationale: >
+    Riduce il rischio di trovare annunci già scaduti/chiusi (motivo di scarto
+    più frequente nelle sessioni di ricerca precedenti). Verificato dove
+    possibile dalla data di pubblicazione dichiarata sull'annuncio o da
+    indicatori come "posted X days/weeks ago".

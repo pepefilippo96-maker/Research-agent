@@ -564,5 +564,73 @@ const JOBS = [
     "status": "da valutare",
     "discard_reason": null,
     "cv_path": null
+  },
+  {
+    "slug": "rai-pubblicita-data-analyst-milano",
+    "title": "Data Analyst",
+    "company": "Rai Pubblicità",
+    "location": "Milano",
+    "remote": null,
+    "url": "https://it.linkedin.com/jobs/view/data-analyst-at-rai-pubblicit%C3%A0-4448098813",
+    "source": "LinkedIn (pagina ufficiale aziendale Rai Pubblicità, con informazioni retributive esplicite per obbligo di legge) — verificato il 31/08/2026, pubblicato secondo le fonti tra 15 ore e 3 settimane fa",
+    "date_found": "2026-08-31",
+    "date_posted": "2026-08 (esatto non determinabile, comunque entro gli ultimi 2 mesi)",
+    "key_requirements": [
+      "Direzione Business Operations & Innovation, Funzione Data Strategy",
+      "Ottimizzazione e valorizzazione dell'ecosistema dati aziendale, metodologie data-driven per innovare i processi",
+      "Livello B1 del CCL Rai Pubblicità"
+    ],
+    "technical_match_score": "Fit di settore ottimo (concessionaria pubblicitaria del servizio pubblico radiotelevisivo — stesso ambito di Publitalia '80/Mediaset già in profile.yaml, audience/advertising data). Fit tecnico da confermare: titolo 'Data Analyst' generico, senza indicazione esplicita di anni di esperienza richiesti nello snippet disponibile — possibile ruolo a seniority inferiore ai 5+ anni target.",
+    "economic_fit": "below_target",
+    "mission_fit": "ok",
+    "fit_notes": "Informazioni retributive dichiarate per obbligo di legge (art. 5 D.Lgs. 96/2026 e Direttiva UE 2023/970): RAL 40.000–48.000 €, livello B1 CCL Rai Pubblicità. Il minimo è sotto la soglia non negoziabile di 45k in goals.yaml, il massimo la supera di poco — fascia non garantita. Rai Pubblicità è la concessionaria pubblicitaria Rai (servizio pubblico radiotelevisivo italiano), settore identico a Publitalia '80/Mediaset del profilo — ottimo fit di mission/settore. Seniority del ruolo non chiara dallo snippet pubblico (LinkedIn richiede login per il testo integrale): da verificare prima di generare il CV. Non genero CV in questa sessione: da valutare con l'utente vista l'incertezza economica e di seniority.",
+    "status": "da valutare",
+    "discard_reason": null,
+    "cv_path": null
+  },
+  {
+    "slug": "otb-global-customer-insights-senior-analyst-milano",
+    "title": "Global Customer Insights Senior Analyst — CRM",
+    "company": "OTB Group",
+    "location": "Milano",
+    "remote": null,
+    "url": "https://it.linkedin.com/jobs/view/global-customer-insights-senior-analyst-at-otb-4448841970",
+    "source": "LinkedIn (pagina ufficiale aziendale OTB) — dettagli contrattuali confermati su più mirror (WhatJobs, Trabajo.org, KitLavoro) il 31/08/2026, pubblicato 5 giorni fa",
+    "date_found": "2026-08-31",
+    "date_posted": "2026-08-26 circa (5 giorni prima del rilevamento)",
+    "key_requirements": [
+      "2-4 anni di esperienza in CRM, Customer Insights, Data Analytics, idealmente nel lusso/fashion retail premium",
+      "Supporto a CRM data governance, segmentazione e analytics"
+    ],
+    "technical_match_score": "Fit tecnico buono su ambito (CRM analytics, segmentazione clienti, vicino all'esperienza Jakala/Mediaset), ma seniority richiesta (2-4 anni) sotto il target di 5+ anni.",
+    "economic_fit": "below_target",
+    "mission_fit": "ok",
+    "fit_notes": "RAL dichiarata € 35.000–42.000 lordi/anno, confermata su più fonti indipendenti: l'intera fascia è sotto la soglia minima non negoziabile di € 45.000 in goals.yaml, senza alcuna sovrapposizione. Scartato per soglia economica, come da regola 6 di CLAUDE.md (stesso motivo del caso METRO Italia). OTB (Diesel, Maison Margiela, Marni, Jil Sander) è un grande gruppo del lusso italiano — buon fit su dimensione/brand, ma irrilevante vista la RAL interamente fuori soglia.",
+    "status": "scartato",
+    "discard_reason": "RAL dichiarata € 35.000–42.000 lordi/anno, interamente sotto la soglia minima non negoziabile di € 45.000 in goals.yaml (confermata su più fonti indipendenti).",
+    "cv_path": null
+  },
+  {
+    "slug": "bearingpoint-data-scientist-senior-consultant-milano",
+    "title": "Data Scientist – Senior Consultant",
+    "company": "BearingPoint",
+    "location": "Milano (preferita) o Torino",
+    "remote": null,
+    "url": "https://www.bearingpoint.com/it-it/careers/posizioni-aperte/offer?id=T7944263",
+    "source": "Career page ufficiale BearingPoint Italia (contenuto confermato anche su careersitaly.bearingpoint.com e mirror JobLeads) — verificato il 31/08/2026; pagina ufficiale è un'app dinamica, RAL e data di pubblicazione esatta non estraibili automaticamente in questo ambiente",
+    "date_found": "2026-08-31",
+    "date_posted": null,
+    "key_requirements": [
+      "4-5 anni di esperienza in Data & Analytics, capacità di progettare e consegnare soluzioni data-driven",
+      "Modelli analitici e machine learning (predittivo ed esplorativo), forte programmazione Python",
+      "Ambienti cloud (AWS/Azure/GCP, Databricks), esposizione a Generative AI/LLM e prompt engineering"
+    ],
+    "technical_match_score": "Fit molto buono su seniority (4-5 anni, in linea con l'esperienza reale di ~5 anni) e su Python/ML/cloud del profilo. Ambito più orientato a data science/ML applicato in contesti multi-industry di consulenza che a BI/reporting puro, ma con enfasi su 'business impact' e presentazione risultati end-to-end coerente con l'esperienza Jakala (Analytics Consultant, client-facing).",
+    "economic_fit": "unknown",
+    "mission_fit": "ok",
+    "fit_notes": "BearingPoint è una società di consulenza management/technology internazionale di buon livello (non top-3 strategy ma paragonabile per tipologia a EY-Parthenon/Deloitte già in pipeline) — coerente col criterio 'consulenza di alto livello'. RAL non dichiarata nell'annuncio (pagina ufficiale dinamica, non estraibile automaticamente): da verificare in colloquio. Data di pubblicazione esatta non determinabile, ma annuncio trovato attivo e coerente su più fonti il 31/08/2026. Non genero CV in questa sessione: da valutare con l'utente vista l'incertezza economica.",
+    "status": "da valutare",
+    "discard_reason": null,
+    "cv_path": null
   }
 ];
