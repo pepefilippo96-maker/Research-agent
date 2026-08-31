@@ -1,40 +1,155 @@
 # Fonte di verità unica per la generazione dei CV (vedi CLAUDE.md, regola 1).
-# Popolato in Fase 1 a partire dal CV/LinkedIn caricato dall'utente in
-# data/profile/source/. Nessun CV generato può contenere informazioni
-# assenti da questo file.
-#
-# STATO: vuoto, in attesa del CV/profilo dell'utente (Fase 1 non ancora eseguita).
+# Estratto da data/profile/source/cv_pf_1.pdf in Fase 1. Nessun CV generato può
+# contenere informazioni assenti da questo file.
 
-full_name: null
-headline: null
-location: null
+full_name: Filippo Pepe
+headline: ML & Data Analytics Specialist
+location: Busto Arsizio, Italia
 contact:
-  email: null
-  phone: null
+  email: pepefilippo96@gmail.com
+  phone: "+39 3200572591"
   linkedin: null
   website: null
 
-summary: null
+summary: >
+  Marketing Intelligence, Analytics and Data Science professional with
+  experience driving business decisions through data, forecasting models and
+  advanced analytics across media, retail and automotive industries. Skilled
+  in translating complex datasets into actionable insights, designing KPI
+  frameworks and supporting strategic initiatives in cross-functional
+  environments. Experienced in working directly with business stakeholders,
+  developing scalable analytical solutions and leveraging machine learning,
+  automation and cloud technologies to improve decision-making and
+  operational effectiveness. Strong analytical mindset, business acumen and
+  ability to structure complex problems into practical solutions.
 
-experience: []
-# - role: null
-#   company: null
-#   location: null
-#   start_date: null
-#   end_date: null
-#   responsibilities: []
-#   achievements: []
+experience:
+  - role: Marketing Data Analyst
+    company: Gruppo Mediaset – Publitalia '80
+    location: Milan
+    start_date: "2024-05"
+    end_date: present
+    responsibilities:
+      - Supported strategic and commercial decision-making through financial, advertising and business performance analysis, providing recommendations to senior stakeholders
+      - Develop business intelligence dashboards and KPI monitoring solutions using Power BI and Qlik for product marketing and sales strategy evaluation
+      - Designed forecasting models to support business planning, audience growth evaluation and advertising inventory optimization
+      - Built market and revenue estimation models to support competitive positioning and strategic decision-making
+      - Analyze consumer behavior and audience trends using Auditel panel data and internal databases
+      - Perform exploratory and advanced analytics to identify trends in product performance and media consumption patterns
+      - Translate complex datasets into actionable insights and strategic recommendations for directors and senior management
+      - Collaborate with cross-functional stakeholders (marketing, sales, editorial and analytics teams) to improve reporting frameworks and insight generation
+    achievements: []
+
+  - role: Analytics Consultant
+    company: Jakala SpA
+    location: Milan
+    start_date: "2022-05"
+    end_date: "2024-05"
+    responsibilities:
+      - Automated KPI calculation and reporting processes using Python and PySpark, improving efficiency, scalability and data reliability
+      - Developed advanced analytical and machine learning solutions to support customer acquisition, retention and commercial performance improvement
+      - Built and maintained ETL pipelines and data workflows using AWS Glue, Athena, SQL and PySpark
+      - Migrated legacy analytics systems from SAS to cloud-based AWS environments, enabling scalable data architecture and advanced analytics capabilities
+      - Analyzed customer behavior and business performance data to identify growth opportunities and support strategic marketing decisions
+      - Produced business intelligence reports and insights to support marketing and operational decision-making
+      - Collaborated with clients and cross-functional teams throughout project design, implementation and delivery phases
+      - Presented analytical findings and strategic recommendations to clients, supporting adoption of data-driven solutions
+    achievements: []
+
+  - role: Junior Data Analyst
+    company: A.G.S. SpA
+    location: Pero
+    start_date: "2021-09"
+    end_date: "2022-04"
+    responsibilities:
+      - Analyzed operational data for automated transport systems in the healthcare sector
+      - Gathered business requirements through client interaction and on-site analysis
+      - Performed data mining and exploratory analysis to identify key insights
+      - Presented results to clients using data visualization and structured reporting
+      - Contributed to development of machine learning models (NLP, neural networks, scraping models)
+    achievements: []
 
 skills:
-  technical: []
-  tools: []
-  languages_spoken: []
+  technical:
+    - Python
+    - SQL
+    - PySpark
+    - ETL & Data Pipelines
+    - AWS (Athena, Glue)
+    - Snowflake
+    - Google BigQuery
+    - Power BI
+    - Qlik
+    - Business Analytics
+    - KPI Frameworks
+    - Forecasting Models
+    - Customer Behavior Analysis
+    - Audience & Media Analytics
+    - Data Visualization
+    - Statistical Modeling
+    - Machine Learning
+  soft:
+    - Analytical skills
+    - Problem solving
+    - Stakeholder communication
+    - Cross-functional collaboration
+  languages_spoken:
+    - language: Italian
+      level: native
+    - language: English
+      level: fluent
+    - language: Spanish
+      level: basic
 
-education: []
-# - degree: null
-#   institution: null
-#   location: null
-#   start_date: null
-#   end_date: null
+education:
+  - degree: M.Sc. in Economics
+    institution: Università Cattolica del Sacro Cuore
+    location: Milan
+    start_date: "2018"
+    end_date: "2021-07"
+  - degree: B.A. in Economics, Finance and Global Markets
+    institution: Università Cattolica del Sacro Cuore
+    location: Milan
+    start_date: "2015"
+    end_date: "2018"
+  - degree: High School Diploma
+    institution: Liceo Classico Statale Carlo Alberto
+    location: Novara
+    start_date: "2010"
+    end_date: "2015"
 
 certifications: []
+
+# Attività extracurricolari/volontariato dal CV: distinte dall'esperienza
+# professionale, disponibili come materiale opzionale per CV dove pertinenti
+# (es. ruoli che valorizzano soft skill di tutoring/comunicazione).
+volunteering_and_extracurricular:
+  - role: Students' tutor
+    organization: Camplus
+    location: Milan
+    start_date: "2018"
+    end_date: "2020"
+    description: Tutoring university students for the preparation of microeconomics and business economics exams
+  - role: Study assistance to middle school pupils
+    organization: Cooperativa Martinengo
+    location: Milan
+    start_date: "2018"
+    end_date: "2021-07"
+    description: null
+  - role: Study assistance to high school students
+    organization: Portofranco
+    location: Milan
+    start_date: "2015"
+    end_date: "2015"
+    description: null
+  - role: Background actor in La Bohème and Turandot
+    organization: Coro Langhi, Compagnia Teatro Coccia
+    location: Novara
+    start_date: "2009"
+    end_date: "2010"
+    description: null
+
+interests:
+  - Music
+  - Cooking
+  - Football

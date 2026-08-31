@@ -1,18 +1,34 @@
 # Obiettivi economici e personali dell'utente (vedi CLAUDE.md, regola 6 e Fase 4).
-# Ogni annuncio in data/jobs/jobs.json viene verificato rispetto a questi valori
+# Estratto da data/profile/source/Obiettivi_Personali.docx in Fase 1. Ogni
+# annuncio in data/jobs/jobs.json viene verificato rispetto a questi valori
 # prima di passare alla generazione del CV.
-#
-# STATO: vuoto, in attesa che l'utente definisca i propri obiettivi (Fase 1 non
-# ancora eseguita).
 
 economic:
-  ral_minimum: null      # RAL minima accettabile (non negoziabile)
-  ral_target: null       # RAL target desiderata
-  currency: null         # es. EUR, USD
-  non_negotiable_benefits: []   # es. equity, welfare, ticket, smart working
+  ral_minimum: 45000        # RAL indicativa ~50.000€ +/- 5.000€
+  ral_target: 50000
+  currency: EUR
+  notes: >
+    Apertura a valutare offerte superiori alla RAL target. Nessun benefit
+    specifico indicato come irrinunciabile al momento.
+  non_negotiable_benefits: []
 
 personal:
-  culture_preferences: []   # tipo di cultura aziendale ricercata
-  values: []                 # mission/temi a cui l'utente tiene (es. sostenibilità)
-  avoid_sectors: []          # settori da evitare
-  avoid_practices: []        # pratiche aziendali da evitare
+  culture_preferences:
+    - Azienda dinamica, in movimento, con percorsi di crescita professionale reali (non solo dichiarati)
+    - Cultura del cambiamento: apertura a mettere in discussione processi e assunzioni consolidate
+    - Contesti che offrono sfide nuove e inusuali piuttosto che ripetizione di processi consolidati
+  values:
+    - Innovazione responsabile: sperimentazione e novità, ma con attenzione all'impatto su società e dipendenti
+    - Pensiero critico su problemi complessi, non banali
+  avoid_practices:
+    - Logica "si è sempre fatto così" / status quo senza messa in discussione
+  avoid_sectors: []
+
+mobility:
+  target_locations: [Italia, estero]   # confermato in Fase 2 della ricerca
+  open_to_short_international_assignments: true
+  notes: >
+    Disponibile a brevi esperienze lavorative all'estero (dell'ordine di
+    qualche mese, non continuative) come parte del percorso di crescita
+    professionale. Aperto anche a posizioni intere all'estero (Italia/estero
+    confermato in Fase 2).

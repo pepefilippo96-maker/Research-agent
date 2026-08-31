@@ -1,0 +1,53 @@
+# Criteri di ricerca (Fase 2, vedi CLAUDE.md). Usati in Fase 3 per filtrare
+# gli annunci prima ancora della verifica economica/mission di Fase 4.
+# Aggiornabile ad ogni nuova ricerca (vedi workflow.md, Step 0).
+
+seniority:
+  level: senior
+  min_years_experience: 5
+  notes: >
+    Coerente con l'esperienza analitica maturata in profile.yaml (Data/AI,
+    analytics, BI) — non ruoli aspirazionali fuori portata rispetto al CV.
+
+roles:
+  # Titoli derivati dal background in profile.yaml (Marketing Data Analyst,
+  # Analytics Consultant, Data Analyst) proiettato a livello senior. Lista
+  # indicativa, da affinare ad ogni ricerca in base agli annunci reali trovati.
+  target_titles:
+    - Senior Data Analyst
+    - Senior Analytics Manager
+    - Data & Analytics Manager
+    - Marketing Analytics Manager
+    - Business Intelligence Manager / Senior BI Analyst
+    - Senior Data Scientist (con focus analytics/business, non solo ML puro)
+    - Analytics Consultant (senior/manager level)
+
+company_profile:
+  size: grande azienda / grande gruppo
+  type:
+    - grandi gruppi italiani
+    - multinazionali con sede in Italia
+  rationale: >
+    Leva sul brand Mediaset/Publitalia presente nel CV per restare in
+    contesti di grande struttura e visibilità.
+  consulting:
+    included: true
+    condition: >
+      Solo consulenza di alto livello (strategy/top-tier), che offra un
+      reale avanzamento di carriera — esclude consulenza generica/
+      body-rental/outsourcing.
+
+location:
+  preferred: Milano e area metropolitana (hinterland milanese) — sede di lavoro nel milanese e dintorni
+  acceptable: Italia (grandi aziende), estero per assignment brevi (vedi goals.yaml → mobility)
+  work_mode_preference: smart working / ibrido (preferenza, non vincolante — "possibilmente")
+
+compensation:
+  min_ral: 45000   # coerente con goals.yaml → economic.ral_minimum/target
+  currency: EUR
+
+exclusions:
+  - piccole/medie imprese o startup (fuori target attuale)
+  - consulenza generica di basso livello
+
+non_negotiable_requirements: []   # es. visto, tipo di contratto — nessuno indicato finora
