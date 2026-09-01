@@ -655,5 +655,51 @@ const JOBS = [
     "status": "cv pronto",
     "discard_reason": null,
     "cv_path": "cv/generated/engie-italia-forecasting-data-scientist-milano/cv.md"
+  },
+  {
+    "slug": "snam-corporate-strategy-business-intelligence-analyst-milano",
+    "title": "Corporate Strategy & Business Intelligence Analyst",
+    "company": "Snam S.p.A.",
+    "location": "Milano",
+    "remote": "ibrido (modello di lavoro flessibile con possibilità di remoto)",
+    "url": "https://it.linkedin.com/jobs/view/corporate-strategy-business-intelligence-analyst-at-snam-s-p-a-4440587557",
+    "source": "LinkedIn (pagina ufficiale aziendale Snam) — verificato leggendo il testo integrale il 01/09/2026, pubblicato 1 mese fa",
+    "date_found": "2026-09-01",
+    "date_posted": "2026-08 circa (1 mese prima del rilevamento)",
+    "key_requirements": [
+      "Laurea magistrale in Economia, Ingegneria, STEM o discipline affini, con 1-3 anni di esperienza professionale rilevante",
+      "Monitoraggio dell'evoluzione del settore energetico (mercati gas/elettricità, decarbonizzazione, nuove tecnologie), trasformazione di informazioni complesse in insight strategici",
+      "Livello di anzianità: esperienza minima"
+    ],
+    "technical_match_score": "Fit tecnico buono su ambito (analisi di mercato, trasformazione di dati complessi in insight strategici per il management, preparazione di materiali executive) — coerente con l'esperienza di supporto a decisioni strategiche e recommendation per senior stakeholder già in profile.yaml (Mediaset). Seniority richiesta (1-3 anni, 'esperienza minima') nettamente sotto il target di 5+ anni in search_criteria.yaml: ruolo probabilmente troppo junior rispetto al profilo.",
+    "economic_fit": "below_target",
+    "mission_fit": "ok",
+    "fit_notes": "VERIFICATO ATTIVO (testo integrale letto via Tavily il 01/09/2026, annuncio con informativa retributiva esplicita per obbligo di legge). RAL minima dichiarata € 43.600 lordi/anno (CCNL Energia e Petrolio, possibile contratto di apprendistato), sotto la soglia non negoziabile di 45k in goals.yaml. Snam è una delle principali multinazionali italiane quotate nel settore infrastrutture energetiche (trasporto/stoccaggio/rigassificazione gas, leader europeo) — ottimo fit su dimensione/brand, con missione di decarbonizzazione coerente con 'innovazione responsabile' di goals.yaml. Ruolo probabilmente troppo junior (esperienza minima 1-3 anni) rispetto ai 5+ anni target, oltre alla RAL sotto soglia. Non genero CV in questa sessione: da valutare con l'utente vista la doppia incertezza (seniority ed economica).",
+    "status": "da valutare",
+    "discard_reason": null,
+    "cv_path": null
+  },
+  {
+    "slug": "nielseniq-senior-analytics-consultant-rgm-milano",
+    "title": "Senior Analytics Consultant - Revenue Growth Management (RGM)",
+    "company": "NielsenIQ",
+    "location": "Milano",
+    "remote": "ibrido (almeno 1 giorno/settimana in ufficio)",
+    "url": "https://it.linkedin.com/jobs/view/senior-analytics-consultant-revenue-growth-management-rgm-at-nielseniq-4459744704",
+    "source": "LinkedIn (pagina ufficiale aziendale NielsenIQ) — verificato leggendo il testo integrale il 01/09/2026",
+    "date_found": "2026-09-01",
+    "date_posted": null,
+    "key_requirements": [
+      "3+ anni di esperienza in RGM (Revenue Growth Management) o Category Management nel settore FMCG",
+      "Gestione di progetti RGM end-to-end per clienti FMCG, pricing e promozioni",
+      "Ottimo Excel e PowerPoint; Power BI un plus"
+    ],
+    "technical_match_score": "Fit moderato: ruolo di consulenza analitica su pricing/revenue per clienti FMCG, traduzione di dati in raccomandazioni azionabili — trasferibile dall'esperienza Analytics Consultant (Jakala) e dai modelli di stima di mercato/revenue (Mediaset), ma il dominio specifico FMCG/RGM non è documentato nel profilo. Seniority (3+ anni) leggermente sotto il target di 5+ anni.",
+    "economic_fit": "below_target",
+    "mission_fit": "unknown",
+    "fit_notes": "VERIFICATO ATTIVO (testo integrale letto via Tavily il 01/09/2026). RAL dichiarata € 35.000-45.000 lordi/anno: l'intera fascia è pari o sotto la soglia minima non negoziabile di 45k in goals.yaml, senza margine sopra soglia. Scartato per soglia economica, come da regola 6 di CLAUDE.md (stesso motivo dei casi METRO Italia e OTB Group). NielsenIQ è una multinazionale globale leader in consumer intelligence — buon fit su dimensione/brand, ma irrilevante vista la RAL non sopra soglia.",
+    "status": "scartato",
+    "discard_reason": "RAL dichiarata € 35.000-45.000 lordi/anno: l'intera fascia è pari o sotto la soglia minima non negoziabile di € 45.000 in goals.yaml, senza margine sopra soglia.",
+    "cv_path": null
   }
 ];
