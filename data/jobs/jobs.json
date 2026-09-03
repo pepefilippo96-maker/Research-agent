@@ -697,5 +697,28 @@
     "status": "scartato",
     "discard_reason": "RAL dichiarata € 35.000-45.000 lordi/anno: l'intera fascia è pari o sotto la soglia minima non negoziabile di € 45.000 in goals.yaml, senza margine sopra soglia.",
     "cv_path": null
+  },
+  {
+    "slug": "bulgari-data-scientist-rome",
+    "title": "Data Scientist",
+    "company": "Bulgari (LVMH)",
+    "location": "Roma",
+    "remote": "in presenza",
+    "url": "https://www.lvmh.com/en/join-us/our-job-offers/BULG08927",
+    "source": "Career page ufficiale LVMH/Bulgari (rif. BULG08927) — verificato ATTIVO leggendo il testo integrale il 01/09/2026, pubblicato 04-Aug-2026",
+    "date_found": "2026-09-01",
+    "date_posted": "2026-08-04",
+    "key_requirements": [
+      "Almeno 5 anni di esperienza in Data Science, Machine Learning, predictive analytics o applied AI",
+      "Python avanzato (Pandas, NumPy, Scikit-learn, TensorFlow/PyTorch), SQL, cloud analytics",
+      "Esperienza di produzione/industrializzazione di soluzioni AI/ML: MLOps, CI/CD, model deployment/monitoring; familiarità con GenAI/LLM/RAG/agentic AI un plus"
+    ],
+    "technical_match_score": "Fit tecnico parziale: il ruolo è fortemente orientato all'industrializzazione e produzione di soluzioni AI/ML (MLOps, CI/CD, model deployment, GenAI/agentic AI) — il profilo copre Python, SQL, Machine Learning e statistical modeling ma non a livello di ML engineering/produzione. Seniority (5+ anni) pienamente in linea con l'esperienza professionale maturata. Gap tecnico analogo ai casi Sky Italia Manager Data Scientist e Johnson & Johnson già in pipeline (ML engineering hands-on vs BI/analytics/forecasting del profilo).",
+    "economic_fit": "ok",
+    "mission_fit": "ok",
+    "fit_notes": "VERIFICATO ATTIVO (testo integrale letto direttamente dalla career page ufficiale LVMH, candidatura aperta). RAL dichiarata € 50.000 lordi/anno fissi per i nuovi assunti in Italia (CCNL Terziario, Distribuzione e Servizi) — esattamente in linea col target di goals.yaml, sopra la soglia minima di 45k. Bulgari fa parte di LVMH, il più grande gruppo del lusso al mondo — eccellente fit su dimensione/brand; impegno dichiarato su responsabilità sociale/ambientale (Fondazione Bvlgari) coerente con 'innovazione responsabile' di goals.yaml. Sede Roma (non Milano/hinterland preferito, ma Italia accettabile per grandi aziende) e modalità in presenza (non ibrido). CV generato in questa sessione: Fase 4 pienamente superata (economic_fit e mission_fit entrambi ok), enfatizzando Python/ML/statistical modeling/forecasting realmente presenti nel profilo; gap di ML engineering/produzione segnalato per la decisione finale dell'utente.",
+    "status": "cv pronto",
+    "discard_reason": null,
+    "cv_path": "cv/generated/bulgari-data-scientist-rome/cv.md"
   }
 ]
