@@ -724,5 +724,28 @@ const JOBS = [
     "status": "cv pronto",
     "discard_reason": null,
     "cv_path": "cv/generated/bulgari-data-scientist-rome/cv.md"
+  },
+  {
+    "slug": "loro-piana-crm-manager-new-york",
+    "title": "CRM Manager",
+    "company": "Loro Piana (LVMH)",
+    "location": "New York, USA (regione Americas)",
+    "remote": null,
+    "url": "https://www.loropiana.com/career/details.php?jobId=1089929&jobTitle=Loro+Piana+-+CRM+Manager",
+    "source": "Career page ufficiale Loro Piana (LVMH) — verificato leggendo il testo integrale il 01/09/2026",
+    "date_found": "2026-09-01",
+    "date_posted": null,
+    "key_requirements": [
+      "5-7 anni di esperienza in CRM, customer management, client development o data analytics, preferibilmente in lusso/fashion/retail",
+      "Esperienza con piattaforme CRM e strumenti di Business Intelligence reporting",
+      "Traduzione di dati cliente in raccomandazioni di business azionabili, gestione KPI CRM e reportistica"
+    ],
+    "technical_match_score": "Fit tecnico molto buono: analisi comportamento cliente, KPI CRM, reportistica per stakeholder senior — molto vicino all'esperienza Jakala (customer acquisition/retention) e Mediaset (audience analytics, dashboard KPI). Seniority (5-7 anni) coerente col target. Ambito CRM/marketing (non puro BI/forecasting) leggermente diverso ma trasferibile.",
+    "economic_fit": "unknown",
+    "mission_fit": "unknown",
+    "fit_notes": "VERIFICATO ATTIVO (testo integrale letto via Tavily il 01/09/2026, candidatura aperta). Loro Piana fa parte di LVMH (come Bulgari già in pipeline) — eccellente fit su dimensione/brand. ATTENZIONE: sede a New York, USA, non Milano/Italia — comporterebbe un trasferimento permanente, non un assignment breve. goals.yaml indica apertura sia a 'brevi esperienze all'estero' sia a 'posizioni intere all'estero', quindi non è escluso dai criteri, ma è una scelta di vita significativa da valutare con l'utente. RAL non dichiarata nell'annuncio (prassi USA, nessun obbligo di trasparenza salariale mostrato) — nessuna verifica economica possibile. Mission/cultura aziendale specifica del team Americas non approfondita. Non genero CV in questa sessione: da valutare con l'utente sia per l'incertezza economica sia per l'implicazione di trasferimento permanente negli USA.",
+    "status": "da valutare",
+    "discard_reason": null,
+    "cv_path": null
   }
 ];
